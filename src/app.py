@@ -104,4 +104,4 @@ def deleteUser(id):
         return jsonify({'msg':f'Task with {id} Deleted Successfully'})  
     
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=False, port=8000, host='0.0.0.0')
